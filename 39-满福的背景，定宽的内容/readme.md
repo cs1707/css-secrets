@@ -28,4 +28,4 @@ footer {
 }
 ```
 
-demo: [https://cs1707.github.io/css-secrets/39](https://cs1707.github.io/css-secrets/39)
+demo: [https://cs1707.github.io/css-secrets/39-满福的背景，定宽的内容](https://cs1707.github.io/css-secrets/39-满福的背景，定宽的内容)

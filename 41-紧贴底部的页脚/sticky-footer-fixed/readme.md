@@ -4,4 +4,4 @@
 
 缺点：需要手动计算高度不够灵活
 
-demo: [https://cs1707.github.io/css-secrets/41/sticky-footer-fixed](https://cs1707.github.io/css-secrets/41/sticky-footer-fixed)
+demo: [https://cs1707.github.io/css-secrets/41-紧贴底部的页脚/sticky-footer-fixed](https://cs1707.github.io/css-secrets/41-紧贴底部的页脚/sticky-footer-fixed)
