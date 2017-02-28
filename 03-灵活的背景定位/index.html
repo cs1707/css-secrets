@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexible background positioning</title>
+  <style>
+    .box {
+      background: url(http://csssecrets.io/images/code-pirate.svg) no-repeat bottom right #58a;
+
+      max-width: 10em;
+      min-height: 5em;
+      padding: 10px;
+      color: white;
+      font: 100%/1 sans-serif;
+    }
+    .box1 {
+      background-position: bottom 10px right 20px;
+    }
+
+    .box2 {
+      background-origin: content-box;
+    }
+
+    .box3 {
+      background-position: calc(100% - 20px) calc(100% - 10px);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>background-position 扩展语法方案</h1>
+    <div class="box box1">
+    </div>
+  </section>
+
+  <section>
+    <h1>background-origin 方案</h1>
+    <div class="box box2">
+    </div>
+  </section>
+
+  <section>
+    <h1>calc() 方案</h1>
+    <div class="box box3">
+    </div>
+  </section>
+</body>
+</html>
