@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inner rounding</title>
+  <style>
+    .something-meaningful {
+      background: #655;
+      padding: .6em;
+      max-width: 12em;
+    }
+    .something-meaningful > div {
+      background: tan;
+      border-radius: .8em;
+      padding: 1em;
+    }
+
+    .hack {
+      max-width: 10em;
+      background: tan;
+      border-radius: .8em;
+      padding: 1em;
+      margin: .6em;
+
+      outline: .6em solid #655;
+      box-shadow: 0 0 0 .4em #655;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>正常方案</h1>
+    <div class="something-meaningful">
+      <div>
+        I have a nice subtle inner rounding, don't I look pretty?
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>outline 方案</h1>
+    <div class="hack">
+      I have a nice subtle inner rounding, don't I look pretty?
+    </div>
+  </section>
+</body>
+</html>
