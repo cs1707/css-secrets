@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stripes</title>
+  <style>
+    .strip {
+      width: 300px;
+      height: 180px;
+    }
+
+    .strip-horizontal {
+      background: linear-gradient(#fb3 50%, #58a 0);
+      background-size: 100% 30px;
+    }
+
+    .strip-vertical {
+      background: linear-gradient(to right, #fb3 50%, #58a 0);
+      background-size: 30px 100%;
+    }
+
+    .strip-diagonal {
+      background: repeating-linear-gradient(60deg, #fb3, #fb3 15px, #58a 0, #58a 30px);
+    }
+
+    .strip-subtle {
+      background-color: #58a;
+      background-image: repeating-linear-gradient(30deg,
+          hsla(0, 0%, 100%, .1),
+          hsla(0, 0%, 100%, .1) 15px,
+          transparent 0,
+          transparent 30px);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>横向条纹</h1>
+    <div class="strip strip-horizontal">
+    </div>
+  </section>
+  <section>
+    <h1>纵向条纹</h1>
+    <div class="strip strip-vertical"></div>
+  </section>
+  <section>
+    <h1>斜向条纹</h1>
+    <div class="strip strip-diagonal"></div>
+  </section>
+  <section>
+    <h1>灵活的同色系条纹</h1>
+    <div class="strip strip-subtle"></div>
+  </section>
+</body>
+</html>
