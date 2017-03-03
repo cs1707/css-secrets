@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>连续的图像边框</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 200px;
+    }
+    .couninuous {
+      border: 1em solid transparent;
+      background: linear-gradient(white, white),
+        url(http://csssecrets.io/images/stone-art.jpg);
+      background-size: cover;
+      background-clip: padding-box, border-box;
+      background-origin: border-box;
+      padding: 1em;
+      resize: both;
+      overflow: hidden;
+    }
+    .envelope {
+      padding: 1em;
+      border: 1em solid transparent;
+      background:
+        linear-gradient(#fff, #fff) padding-box,
+        repeating-linear-gradient(-45deg,
+        red, red 12.5%,
+        transparent 0, transparent 25%,
+        #58a 0, #58a 37.5%,
+        transparent 0, transparent 50%) 0 / 5em 5em;
+    }
+    .marching-ants {
+      padding: 1em;
+      border: 1px solid transparent;
+      background:
+        linear-gradient(#fff, #fff) padding-box,
+        repeating-linear-gradient(-45deg,
+          #000, #000 25%,
+          #fff 0, #fff 50%) 0 / .6em .6em;
+      animation: ants 12s linear infinite;
+    }
+    @keyframes ants {
+      to {
+        background-position: 100%;
+      }
+    }
+    .footnote {
+      border-top: .2em solid transparent;
+      border-image: 100% 0 linear-gradient(90deg, currentColor 4em, transparent 0);
+      padding-top: 1em;
+    }
+  </style>
+</head>
+<body>
+   <section>
+     <h1>couninuous image borders</h1>
+     <div class="box couninuous">
+       Bacon ipsum dolor amet eu adipisicing elit tongue ground round ex fatback proident kielbasa ham hock. Sausage beef beef ribs aliquip t-bone mollit. Quis beef tri-tip sunt, cupim ut magna salami t-bone. Ut laboris bresaola ribeye biltong landjaeger. Chuck pork belly sed sausage.
+     </div>
+   </section>
+   <section>
+     <h1>信封</h1>
+     <div class="box envelope"></div>
+   </section>
+   <section>
+     <h1>蚂蚁行军</h1>
+     <div class="box marching-ants"></div>
+   </section>
+   <section>
+     <h1>footnote</h1>
+     <h1 class="footnote"><sup>1</sup> This is a footnote</h1>
+   </section>
+</body>
+</html>
