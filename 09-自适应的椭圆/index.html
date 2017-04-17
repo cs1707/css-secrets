@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>自适应得椭圆</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 200px;
+      background: #fb3;
+    }
+    .ellipse {
+      border-radius: 50%;
+    }
+    .half-ellipse {
+      border-radius: 50% / 100% 100% 0 0;
+    }
+    .half-ellipse-horizontal {
+      border-radius: 100% 0 0 100% / 50%;
+    }
+    .quarter-ellipse {
+      border-radius: 100% 0 0 0;
+    }
+  </style>
+</head>
+<body>
+   <section>
+     <h1>椭圆</h1>
+     <div class="box ellipse"></div>
+   </section>
+   <section>
+     <h1>半椭圆</h1>
+     <div class="box half-ellipse"></div>
+   </section>
+   <section>
+     <h1>沿纵轴劈开的半椭圆</h1>
+     <div class="box half-ellipse-horizontal"></div>
+   </section>
+   <section>
+     <h1>四分之一椭圆</h1>
+     <div class="box quarter-ellipse"></div>
+   </section>
+</body>
+</html>
