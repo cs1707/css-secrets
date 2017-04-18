@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>平行四边形</title>
+  <style>
+    .parallelograms {
+      position: relative;
+      color: #fff;
+      display: inline-block;
+      padding: 3px 20px;
+      text-transform: uppercase;
+    }
+    .parallelograms:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #58a;
+      /*transform: skew(-45deg);*/
+      transform: perspective(.5em) rotateX(3deg) scale(1.3);
+      transform-origin: left bottom;
+    }
+  </style>
+</head>
+<body>
+   <section>
+     <h1>平行四边形</h1>
+     <div class="parallelograms">click me</div>
+   </section>
+</body>
+</html>
