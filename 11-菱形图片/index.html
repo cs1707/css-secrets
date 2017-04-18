@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>菱形图片</title>
+  <style>
+    .picture {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      transform: rotate(45deg);
+    }
+    .picture > img {
+      width: 100%;
+      transform: rotate(-45deg) scale(1.45);
+    }
+
+    section {
+      margin: 50px;
+    }
+
+    .clip {
+      width: 250px;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      transition: 1s;
+    }
+    .clip:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>菱形图片</h1>
+    <div class="picture">
+      <img src="./adamcatlace.jpg" alt="">
+    </div>
+  </section>
+  <section>
+    <h1>菱形图片 clip-path 实现</h1>
+    <img class="clip" src="./adamcatlace.jpg" alt="">
+  </section>
+</body>
+</html>
